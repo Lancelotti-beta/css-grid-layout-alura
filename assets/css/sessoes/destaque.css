@@ -1,0 +1,6 @@
+.destaques {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: calc(100vh - 3.125rem);
+}
