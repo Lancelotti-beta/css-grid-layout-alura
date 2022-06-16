@@ -1,0 +1,11 @@
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu__link {
+    color: #000000;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+}

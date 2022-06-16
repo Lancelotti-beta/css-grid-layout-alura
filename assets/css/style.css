@@ -9,9 +9,13 @@
     ;
     grid-template-columns: auto;
     grid-template-rows: 3.125rem 100vh auto;
+    gap: 1rem;
+    margin: 0 1rem;
 }
 
 .cabecalho {
+    display: flex;
+    align-items: center;
     grid-area: cabecalho;
 }
  
