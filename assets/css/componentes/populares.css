@@ -53,7 +53,7 @@
         "card-titulo"
         "card-descricao"
     ;
-    grid-template-rows: 50px auto;
+    grid-template-rows: 20% auto;
     padding: .75rem;
 }
 
