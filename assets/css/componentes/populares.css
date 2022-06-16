@@ -1,0 +1,170 @@
+.populares {
+    display: grid;
+    padding: 1.5rem .5rem;
+        
+}
+.populares__itens {
+    grid-area:  aplicativos;
+}
+
+.populares__itens:nth-child(2){
+    grid-area: jogos;
+}
+
+.populares__itens:nth-child(3){
+    grid-area: destaques;
+}
+
+.populares__itens:nth-child(4){
+    grid-area: lancamentos;
+}
+
+.populares__conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.populares__card {
+    background: #fdfdfd;
+    border-radius: .2rem;
+    display: grid;
+    grid-template-areas: 
+        "card-imagem"
+        "card-conteudo"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 173px auto;
+}
+
+.populares__card___imagem {
+    border-radius: .2rem .2rem 0 0;
+    grid-area: card-imagem;
+    height: 100%;
+    width: 100%;
+}
+
+.populares__card___corpo {
+    display: grid;
+    row-gap: .5rem;
+    grid-area: card-conteudo;
+    grid-template-areas: 
+        "card-titulo"
+        "card-descricao"
+    ;
+    grid-template-rows: 50px auto;
+    padding: .75rem;
+}
+
+.populares__cabecalho {
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.populares__card___titulo {
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+.populares__card___data {
+    color: #808080;
+    font-size: .9rem;
+}
+
+.populares__card___descricao {
+    color: #333333;
+    line-height: 1.5;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.populares__titulo {
+    font-weight: 500;
+}
+
+.populares__icone {
+    margin-right: .30rem;
+}
+
+.populares__botao {
+    background: transparent;
+    border: none;
+    color: #333333;
+}
+
+@media screen and (min-width: 300px) {
+    .populares {
+        grid-template-areas:
+            "aplicativos" 
+            "jogos" 
+            "destaques" 
+            "lancamentos" 
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 1fr);
+        padding: 2rem 1rem;
+    }
+
+    .populares__card {
+        width: calc(100% - 1rem);
+    }
+}
+
+
+@media screen and (min-width: 450px) {
+    .populares {
+        grid-template-areas:
+            "aplicativos aplicativos" 
+            "jogos jogos" 
+            "destaques destaques" 
+            "lancamentos lancamentos" 
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 2rem 1rem;
+    }
+
+    .populares__card {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .populares {
+        grid-template-areas:
+            "aplicativos aplicativos aplicativos" 
+            "jogos jogos jogos" 
+            "destaques destaques destaques" 
+            "lancamentos lancamentos lancamentos" 
+        ;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 2rem 1rem;
+    }
+
+    .populares__card {
+        width: calc(33.33% - 1rem);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .populares {
+        grid-template-areas:
+            "aplicativos aplicativos aplicativos aplicativos aplicativos"
+            "jogos jogos jogos jogos jogos"
+            "destaques destaques destaques destaques destaques"
+            "lancamentos lancamentos lancamentos lancamentos lancamentos"
+        ;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 3rem 1.5rem;
+    }
+
+    .populares__card {
+        width: calc(20% - 1rem);
+    }
+}
+
