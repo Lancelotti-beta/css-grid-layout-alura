@@ -1,12 +1,17 @@
-.menu {
+.menu__lista {
     display: flex;
-    color: #000000;
+    color: #333333;
     gap: 1rem;
 }
 
 .menu__link {
     color: inherit;
     font-weight: 700;
+    padding: .5rem 1rem;
     text-transform: capitalize;
     text-decoration: none;
+}
+
+.menu__link:hover, .menu__link.ativo {
+    border-bottom: 1px solid #0073e6;
 }

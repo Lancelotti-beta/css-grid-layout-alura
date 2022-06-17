@@ -8,7 +8,7 @@
         "rodape"
     ;
     grid-template-columns: auto;
-    grid-template-rows: 3.125rem 100vh auto;
+    grid-template-rows: 3.125rem auto auto;
     gap: 1rem;
     margin: 0 1rem;
 }
@@ -17,12 +17,19 @@
     align-items: center;
     display: flex;
     grid-area: cabecalho;
+    padding: 0 2rem;
 }
  
 .conteudo {
     grid-area: conteudo;
+    padding: 0 2rem;
 }
 
 .rodape {
+    background: #fdfdfd;
+    color: #333333;
+    font-size: .8rem;
     grid-area: rodape;
+    padding: 1rem;
+    text-align: center;
 }
