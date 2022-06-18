@@ -9,8 +9,6 @@
     ;
     grid-template-columns: auto;
     grid-template-rows: 3.125rem auto auto;
-    gap: 1rem;
-    margin: 0 1rem;
 }
 
 .cabecalho {
